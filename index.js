@@ -16,3 +16,20 @@ function nowServing(katzDeliLine) {
   }
   return str;
 }
+function currentLine(katzDeliLine) {
+  var line = katzDeliLine.length;
+  var str;
+  if (line === 0) {
+    str = "There line is currently empty";
+  }
+  else {
+    str = "The line is currently: ";
+    for (let i = 0; i < katzDeliLine.length; i++) {
+      str += i + 1 + " " + katzDeliLine[i];
+      if (i < katzDeliLine - 1) {
+        str += ", ";
+      }
+    }
+  }
+  return str;
+}
