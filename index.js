@@ -12,6 +12,7 @@ function nowServing(katzDeliLine) {
   }
   else {
     katzDeliLine.shift();
-    return "Currently serving " + nums[0] + ".";
+    console.log("Currently serving " + nums[0] + ".");
+    return katzDeliLine;
   }
 }
